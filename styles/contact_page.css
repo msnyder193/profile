@@ -1,32 +1,43 @@
-/* TODO: design your profile with CSS */
 body{
-  line-height:1;
-  background-color:#9cc9f9;
-}
-h4{
-  position: absolute;
-  top: 54%;
-  left: 50%;
-  transform: translate(-10%, -90%);
-  font-size:4vw;
-  color:white;
-  }
-h6{
-  position: absolute;
-  top:54%;
-  left:5%;
-  color:white;
-  font-size: 25vw;
+  background-color:#ffa46f
 }
 .body{
   width:700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
-  top:150;
-  left:-5%;
   z-index:-1;
 }
-/* nav bar css */
+.icons{
+  position: absolute;
+  top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.horizontal_list{
+  list-style-type: none;
+  font-size:100px;
+}
 
+.horizontal_list li
+{
+  display: inline;
+}
+.fa-medium:before {
+  content: "\f23a";
+  padding: 75px;
+  }
+.fa-github:before {
+  content: "\f09b";
+  padding: 75px;
+}
+a {
+    color: #1f1d1e;;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
 .animated-icon1, .animated-icon2, .animated-icon3 {
   width: 30px;
   height: 20px;
@@ -171,7 +182,7 @@ h6{
   -o-transform-origin: left center;
   transform-origin: left center;
 }
-html
+
 .animated-icon3.open span:nth-child(1) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -194,32 +205,3 @@ html
   top: 21px;
   left: 8px;
 }
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-}
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
- h4 {
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    right: 55%;
-    transform: translate(-10%, -80%);
-    font-size: 4vw;
-    color: white;
-  }
-  h6{
-    position: absolute;
-    top:54%;
-    left:20%;
-    color:white;
-    font-size: 25vw;
-  }
-  .body{
-    width:700px;
-    position: relative;
-    top:150;
-    left:-20%;
-    z-index:-1;
-  }
